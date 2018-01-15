@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author"  content="Marcus Hernandez">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Marcus Hernandez">
+        <meta name="description" content="Marcus Hernandez | Programmer: Android, Web, General">
         
-        <title>Marcus Hernandez | Creator of Code</title>
+        <title>Marcus Hernandez's Github Page</title>
         
         <!-- Bootstrap.min.css -->
         <link href="vendors/css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +19,7 @@
         <link href="vendors/css/et-line-icons.css" rel="stylesheet">
         <!-- Magnific-popup.css -->
         <link href="vendors/css/magnific-popup.css" rel="stylesheet">
-        <!-- Owl carousel css' -->
+        <!-- Owl carousel css -->
         <link href="vendors/css/owl.carousel.min.css" rel="stylesheet">
         <link href="vendors/css/owl.transitions.css" rel="stylesheet">
         
@@ -30,16 +31,21 @@
     </head>
     
     <body>
-        <h1></h1>
-        <div class="meun-area navbar-fixed-top">
+        <!-- Preloader for site, ensures site is loaded. -->
+        <!-- Displays loader gif until delay is done, fadesout -->
+        <div id="preloader"></div>
+        
+        
+        <!-- Nav bar begin -->
+        <div class="menu-area navbar-fixed-top">
             <div class="container">
                 <div class="row">
-                   
-                   
                     <div class="col-md-12">
                         <div class="mainmenu">
                             <div class="navbar navbar-nobg">
-                               
+                                
+                                
+                                <!-- Hamburger Menu on navbar when page is minimized -->
                                 <div class="navbar-header">
                                     <a class="navbar-brand" href=""><span>Marcus</span></a>
                                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -50,63 +56,144 @@
                                     </button>
                                 </div>
                                 
+                                
+                                <!-- Normal navbar -->
                                 <div class="navbar-collapse collapse">
                                     <nav>
                                         <ul class="nav navbar-nav navbar-right">
                                             <li class="active"><a class="smooth_scroll" href="#slider">Home</a></li>
-                                            <li><a class="smooth_scroll" href="#aboutme">About Me</a></li>
-                                            <li><a class="smooth_scroll" href="#contactme">Contact Me</a></li>
+                                            <li><a class="smooth_scroll" href="#about">About Me</a></li>
+                                            <li><a class="smooth_scroll" href="#contact">Contact Me</a></li>
                                         </ul>
                                     </nav>
                                 </div>
+                            
+                            
                             </div>
                         </div>
                     </div>
-                    
-                    
                 </div>
             </div>
         </div>
+        <!-- Nav bar end -->
         
         
-        
-        <!-- Splash screen with moving text -->
+        <!-- Splash screen with dynamic typing text -->
         <section id="slider" class="slider-area">
             <div class="table">
                 <div class="table-cell">
                     <div class="intro-text">
                         <div class="container">
                             <div class="row">
+                                
+                                
                                 <div class="col-md-12">
-                                    <h2>Testing</h2>
+                                    <h2>Hi, I'm Marcus.  I program</h2>
                                     <div class="typejs"></div>
                                     <div class="clearfix"></div>
-                                    <a href="#aboutme" class="icon-btn smooth_scroll">
+                                    <a href="#about" class="icon-btn smooth_scroll">
                                         <i class="fa fa-angle-double-down"></i>
                                     </a>
                                 </div>
+                                
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Splash screen end -->
         
+        
+        <!-- About Me section -->
+        <section id="about" class="about-area section-big">
+            <div class="container">
+                
+                
+                <!-- About Me section title -->
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="section-title">
+                            <h2><span>About Me</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- About Me Image (left) & Text (right) -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="me-image">
+                            <img src="resources/img/about.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="about-me">
+                            <h3><span>A Quick</span> Intro</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci lorem, mollis vel mi at, fermentum porta urna. Sed ac risus eu massa tempus faucibus. Fusce et arcu in diam vulputate varius at vitae est. Curabitur egestas ante nec magna congue aliquet. Morbi in libero sagittis, tristique massa a, blandit nisi. Pellentesque a est dignissim, consectetur justo quis, convallis mauris. Cras semper iaculis metus, sit amet gravida justo bibendum vitae. Sed elementum, ante ac auctor tristique, massa nisl molestie diam, vel blandit felis lorem quis nisl. Ut quis pharetra sapien. Vestibulum vulputate mi elit, et vestibulum risus efficitur id. Mauris consectetur metus in nunc placerat consectetur. Pellentesque ut tellus augue. Proin rhoncus nibh id rhoncus lobortis. Fusce in diam vitae nisl euismod bibendum sit amet at augue.</p>
+                            
+                            <a class="btn dark smooth_scroll" href="#contact">Contact Me!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Me end -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- Contact Me -->
+        <section id="contact" class="contact-area section-big">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="section-title">
+                            <h2><span>Contact Me</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Me end -->
+        
+        
+        <!-- Footer -->
+        <footer class="footer-area">
+            <div class="container">
+                <ul class="social-ul">
+                    <li><a href="https://www.facebook.com/marcus.hernandez.180"><span class="icon-facebook"></span></a></li>
+                    <li><a href="https://www.linkedin.com/in/marc-hern/"><span class="icon-linkedin"></span></a></li>
+                </ul>
+            </div>
+        </footer>
         
         
         <!-- jQuery.js -->
-        <script src="vendors/js/jquery-3.2.1.slim.min.js"></script>
+        <script src="vendors/js/jquery.min.js"></script>
         <!-- Bootstrap.js -->
         <script src="vendors/js/bootstrap.min.js"></script>
+        <!-- Owl carousel js -->
+        <script src="vendors/js/owl.carousel.min.js"></script>
         <!-- Mixitup.js category mixing -->
         <script src="vendors/js/jquery.mixitup.js"></script>
         <!-- Magnific-popup.js magnifying photos on click -->
         <script src="vendors/js/jquery.magnific-popup.min.js"></script>
-        <!-- Owl carousel js -->
-        <script src="vendors/js/owl.carousel.min.js"></script>
         <!-- Waypoints.js waypoints for scrolling -->
         <script src="vendors/js/jquery.waypoints.min.js"></script>
-        <!-- Typed.js typing splash animation -->
+        <script src="vendors/js/jquery.ajaxchimp.min.js"></script>
+        <!-- Typed.js typing splash animation I love this -->
         <script src="vendors/js/typed.js"></script>
         
         <!-- Custom js -->
