@@ -680,3 +680,7 @@ section {
     background-color: #fff;
     color: #777;
 }
+
+.social-ul li span fa {
+    font-size: 100px;
+}
