@@ -256,6 +256,7 @@ img {
     padding: 15px 0;
 }
 
+/* Top left name in the nav bar */
 .navbar-brand span {
     color: #fff;
     font-weight: 800;
@@ -278,9 +279,10 @@ img {
     display: inline-block;
 }
 
+/* Items in nav bar list */
 .navbar-nav li a {
     font-size: 15px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     color: #fff;
 }
 
