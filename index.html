@@ -28,6 +28,9 @@
         
         <!-- Responsive.css -->
         <link href="vendors/css/responsive.css" rel="stylesheet">
+        
+        <!-- Google reCAPTCHA API -->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     
     <body>
@@ -190,6 +193,50 @@
                         <div class="section-title">
                             <h2><span>Contact Me</span></h2>
                             <p>Send me a message!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="contact-form">
+                            <form id="ajax-contact" action="//formspree.io/mar.hernandez010@gmail.com" method="POST">
+                                
+                                   
+                                <!-- Form fields -->
+                                <!-- Name field -->   
+                                <div class="form-group in_name">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" required="required">
+                                </div>
+                                
+                                <!-- Email field -->
+                                <div class="form-group in_email">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required="required">
+                                </div>
+                                
+                                <!-- Message field -->
+                                <div class="form-group in_message">
+                                    <textarea rows="5" name="message" class="form-control" id="message" placeholder="Message" required="required"></textarea>
+                                </div>
+                                
+                                <!-- _subject: "Website contact" in subject bar on sent emails -->
+                                <input type="hidden" name="_subject" value="Website contact" />
+                                <!-- Formspree.io scraper detection -->
+                                <input type="text" name="_gotcha" style="display:none" />
+                                
+                                <div class="g-recaptcha" data-sitekey="6Ld_qUEUAAAAAD6eKfZH9Bo1uyPC1KpoIW5V_FRt"></div>
+                                
+                                
+                                <div class="actions">
+                                    <input type="submit" value="Send" name="submit" id="submitButton" class="btn" title="Submit Message">
+                                </div>
+                                <!-- Form fields end -->
+                                
+                                
+                            </form>
+                            
+                            <div class="form-messages"></div>
                         </div>
                     </div>
                 </div>
