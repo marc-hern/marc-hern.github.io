@@ -622,6 +622,11 @@ section {
     margin-bottom: 30px;
 }
 
+.g-recaptcha {
+    margin: 0 auto;
+    width: 304px;
+}
+
 
 
 
