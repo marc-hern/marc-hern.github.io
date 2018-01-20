@@ -627,6 +627,19 @@ section {
     width: 304px;
 }
 
+.alert--success{
+    color: forestgreen;
+    margin: 0 auto;
+    width: 304px;
+}
+
+.alert--error{
+    color: crimson;
+    margin: 0 auto;
+    width: 304px;
+}
+
+
 
 
 
