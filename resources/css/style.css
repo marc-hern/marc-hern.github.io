@@ -619,13 +619,13 @@ section {
 .alert--success{
     color: #4abc42;
     margin: 0 auto;
-    width: 304px;
+    width: 390px;
 }
 
 .alert--error{
     color: #dd0808;
     margin: 0 auto;
-    width: 304px;
+    width: 400px;
 }
 
 

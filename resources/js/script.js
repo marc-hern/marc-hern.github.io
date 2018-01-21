@@ -10,6 +10,12 @@
         });
     });
     
+    /* JS for Scrollreveal */
+    window.sr = ScrollReveal({reset: true});
+    sr.reveal('.about-area', {duration: 1200});
+    sr.reveal('.skills-area', {duration: 1200});
+    sr.reveal('.contact-area', {duration: 1200});
+    
     
     
     $(document).ready(function() {
@@ -25,6 +31,16 @@
             } else {
                 menu_area.removeClass('sticky-menu');
             }
+            
+            
+//            $('.skills-area').each(function {
+//                var bottomObj = $(this).offset().top + $(this).outerHeight();
+//                var bottomWindow = $(window).scrollTop() + $(window).height();
+//                
+//                if(bottomObj > bottomWindow) {
+//                    $(this).animate({'opacity': '1'}, 500);
+//                }
+//            });
         });
         /* Background scroll end -->
         
@@ -109,7 +125,7 @@
                     $contactForm.find('.alert--success').hide();
                     $contactForm.find('.alert--error').hide();
                     
-                    $contactForm.append('<div class="alert alert--loading">Sending message...</div>');
+                    $contactForm.append('<div class="alert alert--loading"><b>Sending message...</b></div>');
                 },
                 
                 success: function(data) {
@@ -124,7 +140,7 @@
 //                        $contactForm.('.alert--success').hide();
 //                    }
                     
-                    $contactForm.append('<div class="alert alert--success">Message sent.  Thank you!</div>');
+                    $contactForm.append('<div class="alert alert--success"><b>     Message sent.  Thank you!</b></div>');
                 },
                 
                 error: function(err) {
@@ -139,7 +155,7 @@
 //                        $contactForm.('.alert--success').hide();
 //                    }
                     
-                    $contactForm.append('<div class="alert alert--error">Oops, there was an error!  Please recheck fields.</div>');
+                    $contactForm.append('<div class="alert alert--error"><b>    Oops, there was an error!  Please recheck fields.</b></div>');
                 }
             });
         });
