@@ -89,9 +89,11 @@
         
         
         /* ----------------------------------------------- */
-        /* AJAX                                      */
+        /* AJAX                                            */
         /* ----------------------------------------------- */
+        /* Allows asynchonous updates to page without reload */
         var $contactForm = $('#ajax-contact');
+        
         $contactForm.submit(function(e) {
             e.preventDefault();
             
@@ -102,16 +104,41 @@
                 data: $(this).serialize(),
                 
                 beforeSend: function() {
+                    // Hide all previous alerts to avoid stacking
+                    $contactForm.find('.alert--loading').hide();
+                    $contactForm.find('.alert--success').hide();
+                    $contactForm.find('.alert--error').hide();
+                    
                     $contactForm.append('<div class="alert alert--loading">Sending message...</div>');
                 },
                 
                 success: function(data) {
                     $contactForm.find('.alert--loading').hide();
+//                    $contactForm.find('.alert--success').hide();
+//                    $contactForm.find('.alert--error').hide();
+                    
+//                    if ($(".alert--success")[0]) {
+//                        $contactForm.('.alert--success').hide();
+//                    }
+//                    if ($(".alert--error")[0]) {
+//                        $contactForm.('.alert--success').hide();
+//                    }
+                    
                     $contactForm.append('<div class="alert alert--success">Message sent.  Thank you!</div>');
                 },
                 
                 error: function(err) {
                     $contactForm.find('.alert--loading').hide();
+//                    $contactForm.find('.alert--success').hide();
+//                    $contactForm.find('.alert--error').hide();
+                    
+//                    if ($(".alert--success")[0]) {
+//                        $contactForm.('.alert--success').hide();
+//                    }
+//                    if ($(".alert--error")[0]) {
+//                        $contactForm.('.alert--success').hide();
+//                    }
+                    
                     $contactForm.append('<div class="alert alert--error">Oops, there was an error!  Please recheck fields.</div>');
                 }
             });

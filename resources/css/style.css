@@ -7,8 +7,8 @@ GREY:              #333
 LIGHT GREY:        #777
 WHITE:             #fff
 BLACK:             #000
-SUCCESS GREEN:     #50B948
-ERROR RED:         #ff0000
+SUCCESS GREEN:     #4abc42
+ERROR RED:         #dd0808
 OFF WHITE HOVER:   #ddd
 */
 
@@ -602,22 +602,6 @@ section {
     margin-top: 30px;
 }
 
-.success {
-    background: #fff none repeat scroll 0 0;
-    color: #50B948;
-    font-weight: 700;
-    padding: 20px;
-    text-align: center;
-}
-
-.error {
-    background: #fff none repeat scroll 0 0;
-    color: #ff0000;
-    font-weight: 700;
-    padding: 20px;
-    text-align: center;
-}
-
 .contact-info {
     margin-bottom: 30px;
 }
@@ -627,14 +611,19 @@ section {
     width: 304px;
 }
 
+.alert--loading {
+    margin: 0 auto;
+    width: 304px;
+}
+
 .alert--success{
-    color: forestgreen;
+    color: #4abc42;
     margin: 0 auto;
     width: 304px;
 }
 
 .alert--error{
-    color: crimson;
+    color: #dd0808;
     margin: 0 auto;
     width: 304px;
 }
