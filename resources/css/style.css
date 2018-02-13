@@ -538,6 +538,29 @@ section {
 }
 
 
+
+/* ----------------------------------------------- */
+/* PROJECTS SETUP                                  */
+/* ----------------------------------------------- */
+.project-items .project img{
+    width: 100%;
+    transition: 0.8s ease-out;
+}
+
+.project .title {
+    color: #fff;
+    background: #777;
+    padding: 10px;
+    text-align: center;
+}
+
+.project .project-text-area {
+    padding-top: 20px;
+}
+
+
+
+
 /* ----------------------------------------------- */
 /* CONTACT ME SETUP                                */
 /* ----------------------------------------------- */

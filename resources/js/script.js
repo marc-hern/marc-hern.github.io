@@ -105,6 +105,26 @@
         
         
         /* ----------------------------------------------- */
+        /* MAGNIFIC-POPUP.JS                               */
+        /* ----------------------------------------------- */
+        /* Magnific-popup.js Responsive script for pop up images */
+        $('.project-popup').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+            },
+            
+            zoom: {
+                enabled: true,
+                duration: 300,
+                opener: function(element){
+                    return element.find('img');
+                }
+            }
+        });
+        
+        
+        /* ----------------------------------------------- */
         /* AJAX                                            */
         /* ----------------------------------------------- */
         /* Allows asynchonous updates to page without reload */
