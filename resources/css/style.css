@@ -556,6 +556,10 @@ section {
 
 .project .project-text-area {
     padding-top: 20px;
+    font-size: 14px;
+}
+.project .project-text-area li {
+    margin-left: 30px
 }
 
 

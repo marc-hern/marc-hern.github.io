@@ -14,6 +14,7 @@
     window.sr = ScrollReveal({reset: true});
     sr.reveal('.about-area', {duration: 1200});
     sr.reveal('.skills-area', {duration: 1200});
+    sr.reveal('.projects-area', {duration: 1200});
     sr.reveal('.contact-area', {duration: 1200});
     
     
