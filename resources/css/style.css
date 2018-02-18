@@ -425,6 +425,10 @@ section {
     z-index: 10;
 }
 
+.me-image {
+    padding: 0px 50px 50px 50px;
+}
+
 .img-side {
     padding: 0;
     position: absolute!important;
