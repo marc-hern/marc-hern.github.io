@@ -426,7 +426,7 @@ section {
 }
 
 .me-image {
-    padding: 0px 50px 50px 50px;
+    margin: 10px 50px 50px 50px;
 }
 
 .img-side {
@@ -568,6 +568,15 @@ section {
 
 
 
+.myprojects span.fa {
+    font-size: 30px;
+    color: #777;
+    display: block;
+    text-align: center;
+}
+
+
+
 
 /* ----------------------------------------------- */
 /* CONTACT ME SETUP                                */
@@ -680,23 +689,6 @@ section {
     line-height: 100px;
 }
 
-.address {
-    margin-bottom: 20px;
-}
-
-.address-box {
-    margin-bottom: 10px;
-}
-
-.address-box a:hover {
-    color: #ddd;
-}
-
-.address-box p, .address-box p a {
-    color: inherit;
-    margin: 0;
-}
-
 .social-ul {
     margin: 0;
     padding: 0;
@@ -713,7 +705,7 @@ section {
     font-size: 25px;
     margin: 0 10px;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .social-ul li a span:hover {
