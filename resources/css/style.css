@@ -286,6 +286,7 @@ img {
     color: #fff;
 }
 
+/* Make active section bold in nav bar */
 .navbar-nav li.active a {
     font-weight: 700;
 }
