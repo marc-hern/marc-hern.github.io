@@ -89,7 +89,7 @@
         var element = $(".typejs");
         $(function() {
             element.typed({
-                strings: ["web applications.", "android applications.", "anything :)."],
+                strings: ["automate.", "program.", "collaborate."],
                 typeSpeed: 80,
                 loop: true,
             });
